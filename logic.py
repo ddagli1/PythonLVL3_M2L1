@@ -68,12 +68,7 @@ class Pokemon:
 
   # 📌 4.  Yeni çocuk sınıfları oluşturalım - Wizard ve Fighter
 class Wizard(Pokemon):
-    async def attack(self, enemy):
-        magic_power = random.randint(5, 15)  
-        self.power +=magic_power
-        result = await super().attack(enemy)  
-        self.power -= magic_power
-        return result + f"\nSihirbaz Pokémon süper sihir kullandı. Eklenen güç: {magic_power}"
+    pass
 
 
 class Fighter(Pokemon):
